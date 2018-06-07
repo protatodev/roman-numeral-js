@@ -1,0 +1,38 @@
+.jumbotron {
+  width: 100%;
+  color:navy;
+}
+
+#mathdude {
+  float: left;
+  height: 120px;
+  padding-right: 6px;
+}
+
+
+#ruins {
+  position: absolute;
+  bottom: 0;
+  height: 40%;
+  width: 100%;
+}
+
+body {
+  background-color: beige;
+}
+
+#result {
+  border: 5px solid orange;
+  background-color: white;
+  text-align: center;
+  display: none;
+  width: 300px;
+  margin: auto;
+  margin-top: 20px;
+
+}
+
+
+.form-group {
+  margin: auto;
+}

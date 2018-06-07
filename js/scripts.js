@@ -5,6 +5,7 @@ $(document).ready(function () {
     var input = parseInt($("#field").val());
     var result = romanNumerals(input);
     $("#result").text(result);
+    $("#result").show();
   });
 
 });
@@ -14,7 +15,7 @@ function romanNumerals(number) {
   if(number > 3999) {
     return "Limit is 3999";
   }
-  
+
   var numerals = {M: 1000,
                  CM: 900,
                   D: 500,
@@ -22,8 +23,8 @@ function romanNumerals(number) {
                   C: 100,
                  XC: 90,
                   L: 50,
-                 XL:40,
-                XXX:30,
+                 XL: 40,
+                XXX: 30,
                   X: 10,
                  IX: 9,
                   V: 5,
@@ -39,6 +40,5 @@ function romanNumerals(number) {
 
     }
   }
-  console.log("hello");
   return roman;
  }
