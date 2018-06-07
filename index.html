@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <link href="cs/styles.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
     <script
     src="https://code.jquery.com/jquery-3.3.1.js"
     integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="crossorigin="anonymous"></script>
@@ -15,9 +15,9 @@
       <div class="jumbotron">
         <h1>Roman Numeral Convertor</h1>
       </div>
-      <form class="ourForm">
+      <form id="ourForm">
         <div class="form-group">
-          <label for="field">Enter a number to display it's result in roman numerals:</label>
+          <label for="field">Enter a number to display it's result in roman numerals (Limit is 3999):</label>
           <input type="text" name="field" id="field">
           <button class="btn btn-primary" type="submit" name="button">Submit</button>
         </div>
