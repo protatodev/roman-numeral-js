@@ -1,5 +1,5 @@
 
-import {romanNumerals} from "./roman-numerals.js";
+import {RomanNumerals} from "./roman-numerals.js";
 import $ from "jquery";
 import "./styles.css";
 import 'bootstrap';
@@ -11,8 +11,9 @@ $(document).ready(function () {
 
   $("form#ourForm").submit(function(event) {
     event.preventDefault();
-    var input = parseInt($("#field").val());
-    var result = romanNumerals(input);
+    let input = parseInt($("#field").val());
+    let roman = new RomanNumerals(input); 
+    let result = roman.calculate();
     $("#result").text(result);
     $("#result").show();
   });
